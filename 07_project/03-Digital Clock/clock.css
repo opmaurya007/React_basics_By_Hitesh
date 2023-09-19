@@ -1,0 +1,14 @@
+.center{
+    margin-top:35% ;
+    /* background-color: black; */
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+#clock{
+    background-color: orange;
+    color: white;
+    padding: 20px;
+    margin: 0px 300px 0px 300px;
+    border-radius: 5px;
+}
