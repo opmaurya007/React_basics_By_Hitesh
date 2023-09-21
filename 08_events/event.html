@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basics events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing images</h2>
+    <ul id="images">
+        <li><img width="200px" id="river" src="/img/pexels-cbc-audiovisuals-18055163.jpg" alt="" srcset=""></li>
+        <li><img width="200px" id="lotus" src="/img/pexels-chaos-tyrone-18021990.jpg" alt="" srcset=""></li>
+        <li><img width="200px" id="coffee" src="/img/pexels-feyza-daştan-17435121.jpg" alt="" srcset=""></li>
+        <li><img width="200px" id="cabel_car" src="/img/pexels-hugo-sykes-14958184.jpg" alt="" srcset=""></li>
+        <li><img width="200px" id="bridge" src="/img/pexels-ndex-16665470.jpg" alt="" srcset=""></li>
+        <li><a style="color: aliceblue;" href="http://google.com" id="google">Google</a></li>
+    </ul>
+    
+</body>
+<script>
+    // document.getElementById('lotus').onclick=function(){
+    //     alert("lotus")
+    // }
+      //attechEvent()
+    //jQuery -on
+     //type,timestamp,defualtPrevented,target
+    //toElement,sourceElement,currrentTarget,
+    //clienX,clientY,screenX,screenY
+    //eltkey,ctrlkey,siftkey,keycode
+
+    // document.getElementById('images').addEventListener('click',function(e){
+    // console.log('click inside the ul')
+    // },false)
+    // document.getElementById('lotus').addEventListener('click',function(e){
+    // console.log('lotus clicked')
+    // e.stopPropagation()
+    // },false)
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     console.log('google clicked');
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    // },false)
+    //remove one one image
+    // document.querySelector('#images').addEventListener('click',function(e){
+    //     console.log(e.target.parentNode)
+
+    // },false)
+    // let removeIt=e.target.parentNode
+    // removeIt.remove();
+    // removeIt.parentNode.removeChild(removeIt)
+
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.tagName)
+        if(e.target.tagName ==='IMG'){} 
+        console.log(e.target.id);  
+        let removeIt=e.target.parentNode
+        removeIt.remove();    
+    },false)
+      
+  
+</script>
+</html>
